@@ -1,1 +1,46 @@
-<p>lesson4 works!</p>
+<!-- pipe -->
+<!-- {{ variable | lowercase }} -->
+<!-- {{ variable | uppercase }} -->
+<!-- {{ variable | titlecase }} -->
+<!-- {{ variable | slice:start:end }} -->
+<!-- decimal pipe: -->
+<!-- {{ variable | number:digitInfo }} -->
+<!-- {{ variable | number:digitInfo:locale }} -->
+<!-- digitInfo = 'minInt.minFrac-maxFrac' -->
+<!-- {{ variable | currency:'CURRENCY' }} -->
+
+<!-- <hr> -->
+
+<!-- <h4>{{ userName | lowercase }}</h4>
+<h4>{{ userName | uppercase }}</h4>
+<h4>{{ userName | titlecase }}</h4>
+<h4>{{ userName | slice:0:4 }}</h4>
+<h4>{{ userName | slice:4 }}</h4>
+
+<hr>
+
+<h4>{{ numb | number }}</h4>
+<h4>{{ numb | number:'1.2-2' }}</h4>
+<h4>{{ numb | currency:'EUR' }}</h4>
+<h4>{{ numb | currency:'GBP' }}</h4>
+<h4>{{ numb | currency:'UAH' }}</h4>
+<h4>{{ numb | currency:'UAH':'symbol-narrow' }}</h4>
+<h4>{{ numb | currency:'PLN':'symbol-narrow' }}</h4>
+<h4>{{ numb | currency:'PLN':'symbol-narrow':'4.0-0' }}</h4>
+
+<hr>
+
+<h4>{{ today }}</h4>
+<h4>{{ today | date }}</h4>
+<h4>{{ today | date: 'medium' }}</h4>
+<h4>{{ today | date:'short' }}</h4>
+<h4>{{ today | date:'dd.MM.yyyy HH:mm:ss' }}</h4>
+
+<hr> -->
+
+<input type="text" [(ngModel)]="field">
+<ul>
+    <li *ngFor="let name of arrNames | search:field">
+        {{ name }}
+    </li>
+</ul>
